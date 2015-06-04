@@ -46,3 +46,61 @@
       clear: both;
       display: block;
   }
+  .live > a {
+    color: #003300;
+    text-decoration: none;
+  }
+  .live {
+    background: #CCFFCC;
+    width: 60px;
+    float: right;
+    position: relative;
+    left: 32px;
+    bottom: 46px;
+    border: 1px solid black;
+    border-top-left-radius: 11px;
+    padding: 4px;
+  }
+  .git > a {
+    color: #003300;
+    text-decoration: none;
+  }
+  .git {
+    float: left;
+    background: #00CC66;
+    position: relative;
+    bottom: 29px;
+    padding: 5px;
+    left: 1px;
+    border-top-right-radius: 6px;
+
+  }
+
+  p {
+    width: 140px;
+    padding-top: 60px;
+  }
+  ul {
+    position: relative;
+    bottom: 80px;
+
+  }
+  li {
+    list-style: none;
+    align: left;
+    width: 190px;
+    float: left;
+    padding: 20px;
+
+  }
+  h2 {
+    color: white;
+    position: relative;
+    top: 66px;
+    left: 1px;
+    padding: 8px;
+    background: #5C8038;
+    border-bottom-right-radius: 30px;
+    max-width: 100px;
+    border-bottom: 1px solid white;
+  }
