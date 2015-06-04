@@ -1,1 +1,114 @@
-Hello World
+style>
+  .live > a {
+    color: #003300;
+    text-decoration: none;
+  }
+  .live {
+    background: #CCFFCC;
+    width: 60px;
+    float: right;
+    position: relative;
+    left: 32px;
+    bottom: 46px;
+    border: 1px solid black;
+    border-top-left-radius: 11px;
+    padding: 4px;
+  }
+  .git > a {
+    color: #003300;
+    text-decoration: none;
+  }
+  .git {
+    float: left;
+    background: #00CC66;
+    position: relative;
+    bottom: 29px;
+    padding: 5px;
+    left: 1px;
+    border-top-right-radius: 6px;
+
+  }
+
+  p {
+    width: 140px;
+    padding-top: 60px;
+  }
+  ul {
+    position: relative;
+    bottom: 80px;
+
+  }
+  li {
+    list-style: none;
+    align: left;
+    width: 190px;
+    float: left;
+    padding: 20px;
+
+  }
+  h2 {
+    color: white;
+    position: relative;
+    top: 66px;
+    left: 1px;
+    padding: 8px;
+    background: #5C8038;
+    border-bottom-right-radius: 30px;
+    max-width: 100px;
+    border-bottom: 1px solid white;
+  }
+</style>
+
+
+
+<div class="header">
+<h1>Jeremy Jaffe's Projects</h1>
+</div>
+
+<div class="navbar">
+  <div class="nav">
+    <%= link_to("projects", projects_url) %>
+  </div>
+  <div class="nav">
+    <%= link_to("contact", contact_url) %>
+  </div>
+  <div class="nav">
+    <%= link_to("home", root_url) %>
+  </div>
+</div>
+
+<ul>
+  <li>
+    <h2> Chess </h2>
+    <p>
+      Chess is an exciting game of strategy
+      It also was a fun challenge to code and involved overwriting the dup method on complex objects.
+      Here is a link to a command line chess game written in ruby that I wrote while pair programing with a fellow Appacademy student.
+    </p>
+    <div class="git"><%= link_to("Git Hub Repo", "https://github.com/jmetsr/Chess") %></div>
+  </li>
+  <li>
+    <h2> Checkers </h2>
+    <p>
+      Here is some command line ruby code I wrote for checkers
+    </p>
+    <div class="git"><%= link_to("Git Hub Repo", "https://github.com/jmetsr/checkers") %></div>
+  </li>
+  <li>
+    <h2> Asteroids </h2>
+    <p>
+       I wrote an Asteroids game using javascript and canvas.
+       Here is a link to the javascript code and a live demo to play!
+    </p>
+    <div class="git"><%= link_to("Git Hub Repo", "https://github.com/jmetsr/asteroids") %></div>
+    <div class="live"><%= link_to("Live App", "https://jeremyjaffesasteroidgame.herokuapp.com/#") %></live>
+  </li>
+  <li>
+    <h2> Forum </h2>
+    <p>
+      I made a clone of Dominion strategy Forum using rails and backbone.js
+    </p>
+      <div class="git"><%= link_to("Git Hub Repo", "https://github.com/jmetsr/dominion-strategy-clone") %></div>
+      <div class="live"><%= link_to("Live App", "http://www.dominion-strategy-forum-clone.com/") %></div>
+  </li>
+</ul>
