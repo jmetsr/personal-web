@@ -1,3 +1,9 @@
 p {
-	width: 880px;
+	width: 800px;
+
+}
+
+img {
+	float: left;
+	margin-right: 10px;
 }
